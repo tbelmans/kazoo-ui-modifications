@@ -304,7 +304,7 @@
                             <ul class="inputs-list">
                                 <li>
                                     <label>
-                                        {{if field_data.whitelabel.hide_powered}}
+                                        {{if field_data.whitelabel.hide_powered || typeof field_data.whitelabel.hide_powered === 'undefined'}}
                                         <input id="hide_powered" type="checkbox" name="whitelabel.hide_powered" checked="checked" rel="popover" data-content="${_t('hide_powered_by_data_content')}"/>
                                         {{else}}
                                         <input id="hide_powered" type="checkbox" name="whitelabel.hide_powered" rel="popover" data-content="${_t('hide_powered_by_data_content')}" />
@@ -321,7 +321,7 @@
                             <ul class="inputs-list">
                                 <li>
                                     <label>
-                                        {{if field_data.whitelabel.hide_registration}}
+                                        {{if field_data.whitelabel.hide_registration || typeof field_data.whitelabel.hide_registration === 'undefined'}}
                                         <input id="hide_registration" type="checkbox" name="whitelabel.hide_registration" checked="checked" rel="popover" data-content="${_t('hide_signup_data_content')}"/>
                                         {{else}}
                                         <input id="hide_registration" type="checkbox" name="whitelabel.hide_registration" rel="popover" data-content="${_t('hide_signup_data_content')}" />
@@ -338,7 +338,7 @@
                             <ul class="inputs-list">
                                 <li>
                                     <label>
-                                        {{if field_data.whitelabel.hide_credits}}
+                                        {{if field_data.whitelabel.hide_credits || typeof field_data.whitelabel.hide_credits === 'undefined'}}
                                         <input id="hide_credits" type="checkbox" name="whitelabel.hide_credits" checked="checked" rel="popover" data-content="${_t('hide_credits_data_content')}"/>
                                         {{else}}
                                         <input id="hide_credits" type="checkbox" name="whitelabel.hide_credits" rel="popover" data-content="${_t('hide_credits_data_content')}" />
