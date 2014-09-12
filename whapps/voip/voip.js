@@ -42,7 +42,7 @@ winkstart.module("voip", "voip", {
             faxbox: !1,
             menu: !1,
             registration: !1,
-            resource: !1,
+            /*resource: !1,*/
             timeofday: !1,
             featurecode: !1,
             cdr: !1,
