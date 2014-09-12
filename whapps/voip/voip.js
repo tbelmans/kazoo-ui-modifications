@@ -31,7 +31,7 @@ winkstart.module("voip", "voip", {
             else if (typeof winkstart.config.voip_modules == "object") return winkstart.config.voip_modules;
         if (!t) return {
             account: !1,
-            bulk: !1,
+            /*bulk: !1,*/
             media: !1,
             device: !1,
             callflow: !1,
