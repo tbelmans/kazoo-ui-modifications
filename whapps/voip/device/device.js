@@ -3,11 +3,11 @@ winkstart.module("voip", "device", {
     templates: {
         device: "tmpl/device.html",
         general_edit: "tmpl/general_edit.html",
-        smartphone: "tmpl/smartphone.html",
+/*        smartphone: "tmpl/smartphone.html",*/
         landline: "tmpl/landline.html",
         cellphone: "tmpl/cellphone.html",
         softphone: "tmpl/softphone.html",
-        mobile: "tmpl/mobile.html",
+/*        mobile: "tmpl/mobile.html",*/
         sip_device: "tmpl/edit.html",
         fax: "tmpl/fax.html",
         device_callflow: "tmpl/device_callflow.html",
