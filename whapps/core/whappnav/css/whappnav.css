@@ -18,35 +18,35 @@
 }
 #ws-topbar .whapps > .whapp.open > a {
     background: #052940;
-    background: -moz-radial-gradient(center, ellipse cover,  #052940 50%, #09446b 100%);
+/*    background: -moz-radial-gradient(center, ellipse cover,  #052940 50%, #09446b 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(50%,#052940), color-stop(100%,#09446b));
     background: -webkit-radial-gradient(center, ellipse cover,  #052940 50%,#09446b 100%);
     background: -o-radial-gradient(center, ellipse cover,  #052940 50%,#09446b 100%);
     background: -ms-radial-gradient(center, ellipse cover,  #052940 50%,#09446b 100%);
     background: radial-gradient(center, ellipse cover,  #052940 50%,#09446b 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#052940', endColorstr='#09446b',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#052940', endColorstr='#09446b',GradientType=1 );*/
     color: #05ADDC;
 }
 #ws-topbar .whapps > .whapp > a:hover {
     background: #052940;
-    background: -moz-radial-gradient(center, ellipse cover,  #052940 50%, #09446b 100%);
+/*    background: -moz-radial-gradient(center, ellipse cover,  #052940 50%, #09446b 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(50%,#052940), color-stop(100%,#09446b));
     background: -webkit-radial-gradient(center, ellipse cover,  #052940 50%,#09446b 100%);
     background: -o-radial-gradient(center, ellipse cover,  #052940 50%,#09446b 100%);
     background: -ms-radial-gradient(center, ellipse cover,  #052940 50%,#09446b 100%);
     background: radial-gradient(center, ellipse cover,  #052940 50%,#09446b 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#052940', endColorstr='#09446b',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#052940', endColorstr='#09446b',GradientType=1 );*/
     color: #05ADDC;
 }
 #ws-topbar .whapps > .whapp > a.activate {
     background: #052940;
-    background: -moz-radial-gradient(center, ellipse cover,  #052940 50%, #09446b 100%);
+/*    background: -moz-radial-gradient(center, ellipse cover,  #052940 50%, #09446b 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(50%,#052940), color-stop(100%,#09446b));
     background: -webkit-radial-gradient(center, ellipse cover,  #052940 50%,#09446b 100%);
     background: -o-radial-gradient(center, ellipse cover,  #052940 50%,#09446b 100%);
     background: -ms-radial-gradient(center, ellipse cover,  #052940 50%,#09446b 100%);
     background: radial-gradient(center, ellipse cover,  #052940 50%,#09446b 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#052940', endColorstr='#09446b',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#052940', endColorstr='#09446b',GradientType=1 );*/
     color: #05ADDC;
 }
 #ws-topbar .whapps > .whapp > .dropdown-toggle::after {
