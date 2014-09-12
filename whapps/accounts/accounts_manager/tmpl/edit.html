@@ -457,6 +457,31 @@
                         </div>
                     </div> -->
 
+                    <hr/>
+                    <h3>${_t('language')}</h3>
+                    <div class="clearfix">
+                        <label for="white_label_language">${_t('language')}</label>
+                        <div class="input">
+                            <select class="span4" id="white_label_language" name="whitelabel.language">
+				{{if field_data.whitelabel.language === 'en'}}
+				<option value="en" selected>English</option>
+				{{else}}
+				<option value="en">English</option>
+				{{/if}}
+				{{if field_data.whitelabel.language === 'nl'}}
+				<option value="nl" selected>Nederlands</option>
+				{{else}}
+				<option value="nl">Nederlands</option>
+				{{/if}}
+				{{if field_data.whitelabel.language === 'fr'}}
+				<option value="fr" selected>Fran&ccedil;ais</option>
+				{{else}}
+				<option value="fr">Fran&ccedil;ais</option>
+				{{/if}}
+			    </select>
+                        </div>
+                    </div>
+
                     <div class="refresh_text clearfix">
                         ${_t('in_order_to_see_these_changes')}
                     </div>
