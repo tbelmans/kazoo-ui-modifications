@@ -100,8 +100,12 @@ winkstart.module("voip", "cdr", {
             var n, r, i, f, l, c, h = 0,
                 p, d = [];
             $.each(t.cdr_list.data, function() {
-		//alert(this.toSource());
-                n = this.cid || this.id, i = this.owner_id ? o(this.owner_id) : "", f = this.duration_seconds >= 0 ? s(this.duration_seconds) : "--", l = u(this.timestamp), c = a(n), h += this.billing_seconds >= 0 ? parseFloat(this.billing_seconds) : 0, p = this.cost ? "$" + parseFloat(this.cost / 1e4).toFixed(2) : "-", d.push([this.caller_id_number === this.caller_id_name ? this.caller_id_number || _t("cdr", "empty") : this.caller_id_number + " (" + this.caller_id_name + ")", this.callee_id_number === this.callee_id_name ? this.callee_id_number || (this.to ? this.to.substring(0, this.to.indexOf("@") != -1 ? this.to.indexOf("@") : this.to.length) : _t("cdr", "empty")) || _t("cdr", "empty") : this.callee_id_number + " (" + this.callee_id_name + ")", i ? '<a href="javascript:void(0);" id="' + this.owner_id + '" class="table_owner_link">' + i + "</a>" : _t("cdr", "no_owner"), f || "-", this.hangup_cause || "-", '<a href="javascript:void(0);" data-cdr_id="' + n + '"  class="table_detail_link">' + _t("cdr", "details") + "</a>", p, l, n, this.billing_seconds || ""])
+		if (this.recording_url) {
+			var recording_url = "<a href='" + this.recording_url.replace('call_recording_','') + "'>Beluisteren</a>";
+		} else {
+			var recording_url = "";
+		}
+                n = this.cid || this.id, i = this.owner_id ? o(this.owner_id) : "", f = this.duration_seconds >= 0 ? s(this.duration_seconds) : "--", l = u(this.timestamp), c = a(n), h += this.billing_seconds >= 0 ? parseFloat(this.billing_seconds) : 0, p = this.cost ? "$" + parseFloat(this.cost / 1e4).toFixed(2) : "-", d.push([this.caller_id_number === this.caller_id_name ? this.caller_id_number || _t("cdr", "empty") : this.caller_id_number + " (" + this.caller_id_name + ")", this.callee_id_number === this.callee_id_name ? this.callee_id_number || (this.to ? this.to.substring(0, this.to.indexOf("@") != -1 ? this.to.indexOf("@") : this.to.length) : _t("cdr", "empty")) || _t("cdr", "empty") : this.callee_id_number + " (" + this.callee_id_name + ")", i ? '<a href="javascript:void(0);" id="' + this.owner_id + '" class="table_owner_link">' + i + "</a>" : _t("cdr", "no_owner"), f || "-", this.hangup_cause || "-", '<a href="javascript:void(0);" data-cdr_id="' + n + '"  class="table_detail_link">' + _t("cdr", "details") + "</a>", recording_url, l, n, this.billing_seconds || ""])
             }), h = _t("cdr", "total_duration") + s(h, "verbose"), $(".call_duration", "#cdr-grid_wrapper").text(h), winkstart.table.cdr.fnAddData(d)
         })
     },
